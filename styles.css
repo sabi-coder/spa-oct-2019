@@ -25,7 +25,10 @@ h3 {
 }
 
 li,
-p {
+p,
+label,
+input,
+button {
   font-size: 1.777em;
 }
 
@@ -41,8 +44,6 @@ header {
   text-align: center;
 }
 
-/* General child selector */
-
 ul {
   list-style-type: none;
   padding: 0;
@@ -53,6 +54,26 @@ p {
     Second number is left and right. */
   padding: 0 2.5rem;
   text-align: center;
+}
+
+form {
+  padding: 1rem;
+}
+
+/* A space is a general child selector, so we are selecting ANY divs that are children of a form. */
+form div {
+  margin-bottom: 0.5rem;
+  width: 78vw;
+  max-width: 18rem;
+}
+
+label {
+  margin-right: 0.25rem;
+}
+
+input {
+  border: solid thin var(--primary-color);
+  border-radius: 3px;
 }
 
 footer {
@@ -72,12 +93,12 @@ footer {
   text-decoration: none;
 }
 
-.flex--sm {
-  display: flex;
-}
-
-.mobile-hidden {
-  display: none;
+/* If your width and height are the same,
+  border-radius: 50% will make it look like a circle. */
+.button--circle {
+  border-radius: 50%;
+  height: 8rem;
+  width: 8rem;
 }
 
 .flex {
@@ -88,8 +109,20 @@ footer {
   justify-content: space-around;
 }
 
+.justify-space-between {
+  justify-content: space-between;
+}
+
 @media screen and (min-width: 885px) {
-  body {
-    background: red;
+  #hero {
+    background: url(https://source.unsplash.com/random/800x600) center center
+      no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 100vw;
+  }
+
+  .flex--sm {
+    display: flex;
   }
 }
