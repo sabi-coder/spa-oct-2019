@@ -113,6 +113,20 @@ footer {
   justify-content: space-between;
 }
 
+@media screen and (min-width: 768px) {
+  form {
+    margin: 0 auto;
+    padding: 0;
+    width: 80vw;
+  }
+  form div {
+    max-width: none;
+  }
+  .flex--sm {
+    display: flex;
+  }
+}
+
 @media screen and (min-width: 885px) {
   #hero {
     background: url(https://source.unsplash.com/random/800x600) center center
