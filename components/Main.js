@@ -1,4 +1,5 @@
-export default `<main>
+export default () =>
+  `<main>
 <div id="hero">
   <!-- Hero image on 'sm' screen. -->
 </div>

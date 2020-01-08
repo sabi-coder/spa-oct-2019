@@ -1,3 +1,4 @@
-export default `<header>
-  <h1>Savvy Oct 2019 SPA</h1>
+export default st =>
+  `<header>
+  <h1>${st.heading}</h1>
 </header>`;

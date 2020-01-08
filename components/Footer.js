@@ -1,3 +1,4 @@
-export default `<footer>
+export default () =>
+  `<footer>
     &copy;2019 Savvy Coders
   </footer>`;
