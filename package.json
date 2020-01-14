@@ -24,6 +24,8 @@
     "stylelint-vscode": "^7.0.0-6"
   },
   "dependencies": {
+    "@firebase/app": "^0.5.1",
+    "@firebase/firestore": "^1.9.2",
     "lodash.capitalize": "^4.2.1"
   }
 }
